@@ -32,6 +32,8 @@
 @implementation LYLoginViewController
 {
     //BOOL isSecuryTextEntry;        //判断密码是否明文显示，默认YES，非明文
+    TencentOAuth *tencentOAuth;
+    NSArray *permissions;
 }
 
 #pragma mark - Life Cycle
@@ -44,6 +46,12 @@
     
     _loginButton.enabled = NO;
     _loginButton.alpha = 0.6;
+    
+    //初始化TencenOAuth对象
+    tencentOAuth = [[TencentOAuth alloc] initWithAppId:@"1104924013" andDelegate:self];
+    
+    //设置需要的权限列表
+    permissions = [NSArray arrayWithObjects:@"get_user_info", @"get_simple_userinfo", @"add_t", nil];
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(changeButtonState) name:UITextFieldTextDidChangeNotification object:_accountTextFiled];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(changeButtonState) name:UITextFieldTextDidChangeNotification object:_passwordTextFiled];
@@ -114,6 +122,7 @@
  *  使用QQ帐号授权登录
  */
 - (IBAction)loginWithQQ:(id)sender {
+    [tencentOAuth authorize:permissions inSafari:NO];
 }
 
 /**
@@ -199,6 +208,23 @@
     }
     
     return YES;
+}
+
+#pragma mark - Tencent Session Delegate
+
+- (void)tencentDidLogin
+{
+    NSLog(@"qq授权登录成功");
+}
+
+- (void)tencentDidNotLogin:(BOOL)cancelled
+{
+    NSLog(@"非网络错误导致登录失败");
+}
+
+- (void)tencentDidNotNetWork
+{
+    NSLog(@"网络错误导致登录失败");
 }
 
 @end

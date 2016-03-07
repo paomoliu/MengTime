@@ -15,6 +15,14 @@
 		656AF3931C3E0BFF00B8F0A1 /* MTUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 656AF3921C3E0BFF00B8F0A1 /* MTUser.m */; };
 		656AF3981C3E0C4300B8F0A1 /* MTBaby.m in Sources */ = {isa = PBXBuildFile; fileRef = 656AF3971C3E0C4200B8F0A1 /* MTBaby.m */; };
 		6579E90F1C28E572007DF5E6 /* LYMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6579E90E1C28E572007DF5E6 /* LYMainViewController.m */; };
+		658FD1C41C8DA49B00CB1AF0 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 658FD1C31C8DA49B00CB1AF0 /* Security.framework */; };
+		658FD1C61C8DA51D00CB1AF0 /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 658FD1C51C8DA51D00CB1AF0 /* libiconv.tbd */; };
+		658FD1C81C8DA52900CB1AF0 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 658FD1C71C8DA52900CB1AF0 /* SystemConfiguration.framework */; };
+		658FD1CA1C8DA53400CB1AF0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 658FD1C91C8DA53400CB1AF0 /* CoreGraphics.framework */; };
+		658FD1CC1C8DA54100CB1AF0 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 658FD1CB1C8DA54100CB1AF0 /* libsqlite3.tbd */; };
+		658FD1CE1C8DA54E00CB1AF0 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 658FD1CD1C8DA54E00CB1AF0 /* CoreTelephony.framework */; };
+		658FD1D01C8DA55B00CB1AF0 /* libstdc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 658FD1CF1C8DA55B00CB1AF0 /* libstdc++.tbd */; };
+		658FD1D81C8DA6EA00CB1AF0 /* TencentOpenAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 658FD1D71C8DA6EA00CB1AF0 /* TencentOpenAPI.framework */; };
 		65AD679E1C28248000E0A0EA /* LYLogin.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65AD679D1C28248000E0A0EA /* LYLogin.storyboard */; };
 		65AD67A01C2824C700E0A0EA /* leaves.png in Resources */ = {isa = PBXBuildFile; fileRef = 65AD679F1C2824C700E0A0EA /* leaves.png */; };
 		65AD67A21C2824D500E0A0EA /* video_longvideo_btn_shoot.png in Resources */ = {isa = PBXBuildFile; fileRef = 65AD67A11C2824D500E0A0EA /* video_longvideo_btn_shoot.png */; };
@@ -63,6 +71,14 @@
 		656AF3971C3E0C4200B8F0A1 /* MTBaby.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTBaby.m; sourceTree = "<group>"; };
 		6579E90D1C28E572007DF5E6 /* LYMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYMainViewController.h; sourceTree = "<group>"; };
 		6579E90E1C28E572007DF5E6 /* LYMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYMainViewController.m; sourceTree = "<group>"; };
+		658FD1C31C8DA49B00CB1AF0 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		658FD1C51C8DA51D00CB1AF0 /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
+		658FD1C71C8DA52900CB1AF0 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		658FD1C91C8DA53400CB1AF0 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		658FD1CB1C8DA54100CB1AF0 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		658FD1CD1C8DA54E00CB1AF0 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		658FD1CF1C8DA55B00CB1AF0 /* libstdc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.tbd"; path = "usr/lib/libstdc++.tbd"; sourceTree = SDKROOT; };
+		658FD1D71C8DA6EA00CB1AF0 /* TencentOpenAPI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TencentOpenAPI.framework; sourceTree = "<group>"; };
 		65AD679D1C28248000E0A0EA /* LYLogin.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LYLogin.storyboard; sourceTree = "<group>"; };
 		65AD679F1C2824C700E0A0EA /* leaves.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = leaves.png; sourceTree = "<group>"; };
 		65AD67A11C2824D500E0A0EA /* video_longvideo_btn_shoot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = video_longvideo_btn_shoot.png; sourceTree = "<group>"; };
@@ -99,6 +115,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				65EDF37E1C4E46B2005417E7 /* libz.tbd in Frameworks */,
+				658FD1D01C8DA55B00CB1AF0 /* libstdc++.tbd in Frameworks */,
+				658FD1CE1C8DA54E00CB1AF0 /* CoreTelephony.framework in Frameworks */,
+				658FD1CC1C8DA54100CB1AF0 /* libsqlite3.tbd in Frameworks */,
+				658FD1CA1C8DA53400CB1AF0 /* CoreGraphics.framework in Frameworks */,
+				658FD1D81C8DA6EA00CB1AF0 /* TencentOpenAPI.framework in Frameworks */,
+				658FD1C81C8DA52900CB1AF0 /* SystemConfiguration.framework in Frameworks */,
+				658FD1C61C8DA51D00CB1AF0 /* libiconv.tbd in Frameworks */,
+				658FD1C41C8DA49B00CB1AF0 /* Security.framework in Frameworks */,
 				ADA607893CC03F43BE24F037 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -319,6 +343,14 @@
 		F86172CD71B8A9BE4A9F51EB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				658FD1D71C8DA6EA00CB1AF0 /* TencentOpenAPI.framework */,
+				658FD1CF1C8DA55B00CB1AF0 /* libstdc++.tbd */,
+				658FD1CD1C8DA54E00CB1AF0 /* CoreTelephony.framework */,
+				658FD1CB1C8DA54100CB1AF0 /* libsqlite3.tbd */,
+				658FD1C91C8DA53400CB1AF0 /* CoreGraphics.framework */,
+				658FD1C71C8DA52900CB1AF0 /* SystemConfiguration.framework */,
+				658FD1C51C8DA51D00CB1AF0 /* libiconv.tbd */,
+				658FD1C31C8DA49B00CB1AF0 /* Security.framework */,
 				65EDF37D1C4E46B2005417E7 /* libz.tbd */,
 				6E6B4AE9F05BD19FE9E8712A /* libPods.a */,
 			);
@@ -627,6 +659,7 @@
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(PROJECT_DIR)/MengTime/Supporting",
 					Files,
+					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MengTime/Supporting Files/MengTime-Prefix.pch";
@@ -644,6 +677,29 @@
 				INFOPLIST_FILE = "MengTime/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"AFNetworking\"",
+					"-l\"DQAlertView\"",
+					"-l\"MBProgressHUD\"",
+					"-l\"MJRefresh\"",
+					"-l\"RESideMenu\"",
+					"-l\"SDWebImage\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"ImageIO\"",
+					"-framework",
+					"\"MobileCoreServices\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-fobjc-arc",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.cqnu.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
@@ -661,6 +717,7 @@
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(PROJECT_DIR)/MengTime/Supporting",
 					Files,
+					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MengTime/Supporting Files/MengTime-Prefix.pch";
@@ -678,6 +735,29 @@
 				INFOPLIST_FILE = "MengTime/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"AFNetworking\"",
+					"-l\"DQAlertView\"",
+					"-l\"MBProgressHUD\"",
+					"-l\"MJRefresh\"",
+					"-l\"RESideMenu\"",
+					"-l\"SDWebImage\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"ImageIO\"",
+					"-framework",
+					"\"MobileCoreServices\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-fobjc-arc",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.cqnu.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";

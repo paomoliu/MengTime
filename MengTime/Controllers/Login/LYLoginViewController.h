@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface LYLoginViewController : UIViewController <UITextFieldDelegate>
+@interface LYLoginViewController : UIViewController <UITextFieldDelegate, TencentSessionDelegate>
 
 @end
