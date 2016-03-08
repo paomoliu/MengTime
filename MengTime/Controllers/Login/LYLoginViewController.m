@@ -9,6 +9,7 @@
 #import "LYLoginViewController.h"
 #import "LYContentSegmentFormatTextFiled.h"
 #import "LYRegisterViewController.h"
+#import "LYRootViewController.h"
 
 #import "Utils.h"
 #import "MTAPI.h"
@@ -129,6 +130,10 @@
  *  使用新浪微博帐号授权登录
  */
 - (IBAction)loginWithSina:(id)sender {
+    WBAuthorizeRequest *request = [WBAuthorizeRequest request];
+    request.redirectURI = KREDIRECTURL;  //设置微博开放平台第三方应用授权回调页地址
+    request.scope = @"all";              //设置微博开放平台第三方应用scope
+    [WeiboSDK sendRequest:request];      //调用sendRequest方法后会跳转到微博程序
 }
 
 /**
@@ -215,16 +220,56 @@
 - (void)tencentDidLogin
 {
     NSLog(@"qq授权登录成功");
+    if (tencentOAuth.accessToken && 0 != [tencentOAuth.accessToken length]) {
+        [tencentOAuth getUserInfo];    //获取用户个人信息
+        
+        UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+        LYRootViewController *rootVC = [storyboard instantiateViewControllerWithIdentifier:@"rootViewController"];
+        [UIApplication sharedApplication].keyWindow.rootViewController = rootVC;
+    } else {
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"QQ登录失败"
+                                                        message:@"登录失败，未获取到accessToken"
+                                                       delegate:nil
+                                              cancelButtonTitle:@"OK"
+                                              otherButtonTitles:nil];
+        [alert show];
+    }
 }
 
 - (void)tencentDidNotLogin:(BOOL)cancelled
 {
     NSLog(@"非网络错误导致登录失败");
+    if (cancelled) {
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"非网络错误导致登录失败"
+                                                        message:@"用户取消登录"
+                                                       delegate:nil
+                                              cancelButtonTitle:@"OK"
+                                              otherButtonTitles:nil];
+        [alert show];
+    } else {
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"非网络错误导致登录失败"
+                                                        message:@"登录失败"
+                                                       delegate:nil
+                                              cancelButtonTitle:@"OK"
+                                              otherButtonTitles:nil];
+        [alert show];
+    }
 }
 
 - (void)tencentDidNotNetWork
 {
     NSLog(@"网络错误导致登录失败");
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"网络错误导致登录失败"
+                                                    message:@"无网络连接，请设置网络"
+                                                   delegate:nil
+                                          cancelButtonTitle:@"OK"
+                                          otherButtonTitles:nil];
+    [alert show];
+}
+
+- (void)getUserInfoResponse:(APIResponse *)response
+{
+    NSLog(@"respons:%@", response.jsonResponse);
 }
 
 @end

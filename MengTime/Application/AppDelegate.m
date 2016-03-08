@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "LYRootViewController.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +18,11 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    //注册新浪微博appkey
+    [WeiboSDK enableDebugMode:YES];
+    [WeiboSDK registerApp:KAPPKEY];
+    
     return YES;
 }
 
@@ -42,14 +48,34 @@
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
 
-- (BOOL)application:(UIApplication *)application openURL:(nonnull NSURL *)url sourceApplication:(nullable NSString *)sourceApplication annotation:(nonnull id)annotation
+//收到来自微博客户端的请求
+- (void)didReceiveWeiboRequest:(WBBaseRequest *)request
 {
-    return [TencentOAuth HandleOpenURL:url];
+    
+}
+
+//收到来自微博客户端的响应
+- (void)didReceiveWeiboResponse:(WBBaseResponse *)response
+{
+    if ([response isKindOfClass:WBAuthorizeResponse.class]) {
+        NSLog(@"登录认证");
+        UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+        LYRootViewController *rootVC = [storyboard instantiateViewControllerWithIdentifier:@"rootViewController"];
+        self.window.rootViewController = rootVC;
+    }
+}
+
+- (BOOL)application:(UIApplication *)application
+            openURL:(nonnull NSURL *)url
+  sourceApplication:(nullable NSString *)sourceApplication
+         annotation:(nonnull id)annotation
+{
+    return [TencentOAuth HandleOpenURL:url] || [WeiboSDK handleOpenURL:url delegate:self];
 }
 
 - (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url
 {
-    return [TencentOAuth HandleOpenURL:url];
+    return [TencentOAuth HandleOpenURL:url] || [WeiboSDK handleOpenURL:url delegate:self];
 }
 
 @end

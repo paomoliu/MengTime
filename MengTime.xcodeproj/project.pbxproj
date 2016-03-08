@@ -7,11 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6556E5E41C0F391A00CC5813 /* LYLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6556E5E31C0F391A00CC5813 /* LYLoginViewController.m */; };
 		6556E5EB1C0F394F00CC5813 /* LYRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6556E5E81C0F394F00CC5813 /* LYRegisterViewController.m */; };
 		6556E5EC1C0F394F00CC5813 /* LYVerifyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6556E5EA1C0F394F00CC5813 /* LYVerifyViewController.m */; };
 		6556E5EF1C0F395E00CC5813 /* LYContentSegmentFormatTextFiled.m in Sources */ = {isa = PBXBuildFile; fileRef = 6556E5EE1C0F395E00CC5813 /* LYContentSegmentFormatTextFiled.m */; };
 		6556E5F21C0F399800CC5813 /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 6556E5F11C0F399800CC5813 /* Utils.m */; };
+		656960E01C8E97800058A140 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 656960DF1C8E97800058A140 /* AppDelegate.m */; };
+		656960E31C8E979F0058A140 /* LYLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 656960E21C8E979F0058A140 /* LYLoginViewController.m */; };
+		656960E61C8E97C00058A140 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 656960E41C8E97C00058A140 /* Info.plist */; };
 		656AF3931C3E0BFF00B8F0A1 /* MTUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 656AF3921C3E0BFF00B8F0A1 /* MTUser.m */; };
 		656AF3981C3E0C4300B8F0A1 /* MTBaby.m in Sources */ = {isa = PBXBuildFile; fileRef = 656AF3971C3E0C4200B8F0A1 /* MTBaby.m */; };
 		6579E90F1C28E572007DF5E6 /* LYMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6579E90E1C28E572007DF5E6 /* LYMainViewController.m */; };
@@ -32,7 +34,6 @@
 		65AD67AA1C2824FA00E0A0EA /* password@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 65AD67A81C2824FA00E0A0EA /* password@2x.png */; };
 		65AD67AC1C2825F400E0A0EA /* LYRegister.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65AD67AB1C2825F400E0A0EA /* LYRegister.storyboard */; };
 		65B5AF1B1C0EEF890082422C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 65B5AF1A1C0EEF890082422C /* main.m */; };
-		65B5AF1E1C0EEF890082422C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 65B5AF1D1C0EEF890082422C /* AppDelegate.m */; };
 		65B5AF231C0EEF890082422C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65B5AF221C0EEF890082422C /* Images.xcassets */; };
 		65B5AF261C0EEF890082422C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65B5AF241C0EEF890082422C /* LaunchScreen.xib */; };
 		65B5AF321C0EEF890082422C /* MengTimeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 65B5AF311C0EEF890082422C /* MengTimeTests.m */; };
@@ -55,8 +56,6 @@
 
 /* Begin PBXFileReference section */
 		651247DE1C3D336D005FA162 /* MTAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTAPI.h; sourceTree = "<group>"; };
-		6556E5E21C0F391A00CC5813 /* LYLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYLoginViewController.h; sourceTree = "<group>"; };
-		6556E5E31C0F391A00CC5813 /* LYLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYLoginViewController.m; sourceTree = "<group>"; };
 		6556E5E71C0F394F00CC5813 /* LYRegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYRegisterViewController.h; sourceTree = "<group>"; };
 		6556E5E81C0F394F00CC5813 /* LYRegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYRegisterViewController.m; sourceTree = "<group>"; };
 		6556E5E91C0F394F00CC5813 /* LYVerifyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYVerifyViewController.h; sourceTree = "<group>"; };
@@ -65,6 +64,12 @@
 		6556E5EE1C0F395E00CC5813 /* LYContentSegmentFormatTextFiled.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYContentSegmentFormatTextFiled.m; sourceTree = "<group>"; };
 		6556E5F01C0F399800CC5813 /* Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utils.h; sourceTree = "<group>"; };
 		6556E5F11C0F399800CC5813 /* Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utils.m; sourceTree = "<group>"; };
+		656960DE1C8E97800058A140 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		656960DF1C8E97800058A140 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		656960E11C8E979F0058A140 /* LYLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYLoginViewController.h; sourceTree = "<group>"; };
+		656960E21C8E979F0058A140 /* LYLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYLoginViewController.m; sourceTree = "<group>"; };
+		656960E41C8E97C00058A140 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		656960E51C8E97C00058A140 /* MengTime-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MengTime-Prefix.pch"; sourceTree = "<group>"; };
 		656AF3911C3E0BFF00B8F0A1 /* MTUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTUser.h; sourceTree = "<group>"; };
 		656AF3921C3E0BFF00B8F0A1 /* MTUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTUser.m; sourceTree = "<group>"; };
 		656AF3961C3E0C4200B8F0A1 /* MTBaby.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTBaby.h; sourceTree = "<group>"; };
@@ -88,17 +93,13 @@
 		65AD67A81C2824FA00E0A0EA /* password@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "password@2x.png"; sourceTree = "<group>"; };
 		65AD67AB1C2825F400E0A0EA /* LYRegister.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LYRegister.storyboard; sourceTree = "<group>"; };
 		65B5AF151C0EEF890082422C /* MengTime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MengTime.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		65B5AF191C0EEF890082422C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		65B5AF1A1C0EEF890082422C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		65B5AF1C1C0EEF890082422C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		65B5AF1D1C0EEF890082422C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		65B5AF221C0EEF890082422C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		65B5AF251C0EEF890082422C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		65B5AF2B1C0EEF890082422C /* MengTimeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MengTimeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		65B5AF301C0EEF890082422C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		65B5AF311C0EEF890082422C /* MengTimeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MengTimeTests.m; sourceTree = "<group>"; };
 		65B5AF451C0F06F30082422C /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		65B5AF471C0F07DB0082422C /* MengTime-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MengTime-Prefix.pch"; sourceTree = "<group>"; };
 		65EDF37D1C4E46B2005417E7 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		65EF758C1C282B760073DA32 /* LYRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYRootViewController.h; sourceTree = "<group>"; };
 		65EF758D1C282B760073DA32 /* LYRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYRootViewController.m; sourceTree = "<group>"; };
@@ -201,8 +202,8 @@
 		65B5AF181C0EEF890082422C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				65B5AF191C0EEF890082422C /* Info.plist */,
-				65B5AF471C0F07DB0082422C /* MengTime-Prefix.pch */,
+				656960E41C8E97C00058A140 /* Info.plist */,
+				656960E51C8E97C00058A140 /* MengTime-Prefix.pch */,
 				65AD67A31C2824EE00E0A0EA /* account.png */,
 				65AD67A41C2824EE00E0A0EA /* account@2x.png */,
 				65AD679F1C2824C700E0A0EA /* leaves.png */,
@@ -234,8 +235,8 @@
 		65B5AF3B1C0F03D90082422C /* Application */ = {
 			isa = PBXGroup;
 			children = (
-				65B5AF1C1C0EEF890082422C /* AppDelegate.h */,
-				65B5AF1D1C0EEF890082422C /* AppDelegate.m */,
+				656960DE1C8E97800058A140 /* AppDelegate.h */,
+				656960DF1C8E97800058A140 /* AppDelegate.m */,
 				651247DE1C3D336D005FA162 /* MTAPI.h */,
 			);
 			path = Application;
@@ -293,9 +294,9 @@
 		65B5AF431C0F06680082422C /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				656960E11C8E979F0058A140 /* LYLoginViewController.h */,
+				656960E21C8E979F0058A140 /* LYLoginViewController.m */,
 				65AD679D1C28248000E0A0EA /* LYLogin.storyboard */,
-				6556E5E21C0F391A00CC5813 /* LYLoginViewController.h */,
-				6556E5E31C0F391A00CC5813 /* LYLoginViewController.m */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -449,6 +450,7 @@
 				65AD67A01C2824C700E0A0EA /* leaves.png in Resources */,
 				65AD67A51C2824EE00E0A0EA /* account.png in Resources */,
 				65AD679E1C28248000E0A0EA /* LYLogin.storyboard in Resources */,
+				656960E61C8E97C00058A140 /* Info.plist in Resources */,
 				65B5AF261C0EEF890082422C /* LaunchScreen.xib in Resources */,
 				65B5AF231C0EEF890082422C /* Images.xcassets in Resources */,
 				65AD67AA1C2824FA00E0A0EA /* password@2x.png in Resources */,
@@ -521,14 +523,14 @@
 				6556E5EF1C0F395E00CC5813 /* LYContentSegmentFormatTextFiled.m in Sources */,
 				65EF758E1C282B760073DA32 /* LYRootViewController.m in Sources */,
 				6556E5EB1C0F394F00CC5813 /* LYRegisterViewController.m in Sources */,
-				65B5AF1E1C0EEF890082422C /* AppDelegate.m in Sources */,
 				6556E5F21C0F399800CC5813 /* Utils.m in Sources */,
 				656AF3981C3E0C4300B8F0A1 /* MTBaby.m in Sources */,
 				65EF75911C282C140073DA32 /* LYSideMenuViewController.m in Sources */,
 				656AF3931C3E0BFF00B8F0A1 /* MTUser.m in Sources */,
+				656960E01C8E97800058A140 /* AppDelegate.m in Sources */,
 				6556E5EC1C0F394F00CC5813 /* LYVerifyViewController.m in Sources */,
 				65B5AF1B1C0EEF890082422C /* main.m in Sources */,
-				6556E5E41C0F391A00CC5813 /* LYLoginViewController.m in Sources */,
+				656960E31C8E979F0058A140 /* LYLoginViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

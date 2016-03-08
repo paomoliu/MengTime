@@ -8,7 +8,7 @@
         <!--Root View Controller-->
         <scene sceneID="2W3-NW-9nt">
             <objects>
-                <viewController id="bED-49-1Hk" customClass="LYRootViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="rootViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="bED-49-1Hk" customClass="LYRootViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ld2-De-uta"/>
                         <viewControllerLayoutGuide type="bottom" id="ArM-kB-oTy"/>

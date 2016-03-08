@@ -13,9 +13,13 @@
 // You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
 
 #import <TencentOpenAPI/TencentOAuth.h>
+#import <WeiboSDK.h>
 
 #import "MBProgressHUD.h"
 #import "DQAlertView.h"
 #import "AFNetworking.h"
+
+#define KAPPKEY         @"756247302"
+#define KREDIRECTURL    @"https://api.weibo.com/oauth2/default.html"
 
 #endif
